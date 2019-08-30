@@ -4,8 +4,9 @@ module.exports = {
 		nav: [
 			{ text: 'Top', link: '/' },
 			//{ text: 'About', link: '/about/' },
-			{ text: 'Reads', link: '/reads/' },
-			{ text: 'Lectures', link: '/lecture_reports/'},
+			{ text: 'Book Review', link: '/book_review/' },
+			{ text: 'Lecture Review', link: '/lecture_review/'},
+			{ text: 'Articles', link: '/articles/'},
 			{ text: 'Chitchat', link: '/chitchat/'},
 			{
 				text: 'Links',
@@ -16,13 +17,13 @@ module.exports = {
 			}
 		],
 		sidebar: {	
-			'/reads/': [
+			'/book_review/': [
 				'',
 				'mathematics',
 				'physics',
 				'computer_science'
 			],
-			'/lecture_reports/': [
+			'/lecture_review/': [
 				'',
 				['2A/', '2A'],
 				['3S/', '3S'],
@@ -30,14 +31,22 @@ module.exports = {
 				['4S/', '4S'],
 				['4A/', '4A']
 			],
+			'/articles/': [
+				''
+			],
 			'/chitchat/': [
 				''
 			],
+			/*
 			'/': [
 				''
 			]
+			*/
 		}
 	},
 	base: '/my_page/',
-	dest: '../docs/'
+	dest: '../docs/',
+	markdown: {
+		lineNumbers: true
+	}
 }

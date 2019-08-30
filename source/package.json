@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "vuepress": "^1.0.3",
+    "name": "とある情報科学徒の雑談日記",
+    "main": "index.js",
+    "license": "MIT"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}

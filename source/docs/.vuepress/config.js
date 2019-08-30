@@ -5,6 +5,7 @@ module.exports = {
 			{ text: 'Top', link: '/' },
 			//{ text: 'About', link: '/about/' },
 			{ text: 'Reads', link: '/reads/' },
+			{ text: 'Lectures', link: '/lecture_reports/'},
 			{ text: 'Chitchat', link: '/chitchat/'},
 			{
 				text: 'Links',
@@ -16,23 +17,18 @@ module.exports = {
 		],
 		sidebar: {	
 			'/reads/': [
-			/*	
-				'',
-				'mathematics/': [
-					''
-				],
-				'physics/': [
-					''
-				],
-				'computer_science/': [
-					''
-				]
-			*/
 				'',
 				'mathematics',
 				'physics',
 				'computer_science'
-			
+			],
+			'/lecture_reports/': [
+				'',
+				['2A/', '2A'],
+				['3S/', '3S'],
+				['3A/', '3A'],
+				['4S/', '4S'],
+				['4A/', '4A']
 			],
 			'/chitchat/': [
 				''

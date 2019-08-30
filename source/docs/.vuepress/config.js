@@ -1,15 +1,15 @@
 module.exports = {
 	title: 'とある情報科学徒の雑談日記',
+	description: '欢迎来到我的网站',
 	themeConfig: {
 		nav: [
 			{ text: 'Top', link: '/' },
-			//{ text: 'About', link: '/about/' },
 			{ text: 'Book Review', link: '/book_review/' },
 			{ text: 'Lecture Review', link: '/lecture_review/'},
 			{ text: 'Articles', link: '/articles/'},
 			{ text: 'Chitchat', link: '/chitchat/'},
 			{
-				text: 'Links',
+				text: 'SNS',
 				items: [
 					{ text: 'Twitter', link: 'https://twitter.com/bobo_academia' },
 					{ text: 'GitHub', link: 'https://github.com/BOBO1997' },
@@ -37,11 +37,6 @@ module.exports = {
 			'/chitchat/': [
 				''
 			],
-			/*
-			'/': [
-				''
-			]
-			*/
 		}
 	},
 	base: '/my_page/',

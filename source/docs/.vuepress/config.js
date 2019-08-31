@@ -1,6 +1,9 @@
 module.exports = {
 	title: 'とある情報科学徒の雑談日記',
 	description: '欢迎来到我的网站',
+	head: [
+		['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]
+	],
 	themeConfig: {
 		nav: [
 			{ text: 'Top', link: '/' },
@@ -18,13 +21,13 @@ module.exports = {
 		],
 		sidebar: {	
 			'/book_review/': [
-				'',
+				['', '【読書録】'],
 				'mathematics',
 				'physics',
 				'computer_science'
 			],
 			'/lecture_review/': [
-				'',
+				['', '【授業記録】'],
 				['2A/', '2A'],
 				['3S/', '3S'],
 				['3A/', '3A'],
@@ -32,10 +35,13 @@ module.exports = {
 				['4A/', '4A']
 			],
 			'/articles/': [
-				''
+				['', '【記事・まとめ】'],
 			],
 			'/chitchat/': [
-				''
+				['', '【雑談】'],
+				['diary', '日記'],
+				['utokyo', '大学'],
+				['china', '中国'],
 			],
 		}
 	},

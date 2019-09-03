@@ -24,7 +24,11 @@ module.exports = {
 				['', '【読書録】'],
 				'mathematics',
 				'physics',
-				'computer_science'
+				'computer_science',
+				'liberal_arts',
+				'novels',
+				'light_novels',
+				'others'
 			],
 			'/lecture_review/': [
 				['', '【授業記録】'],

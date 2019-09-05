@@ -46,7 +46,7 @@ module.exports = {
 				['diary', '日記'],
 				['utokyo', '大学'],
 				['china', '中国'],
-				['vocaloid', 'ボーカロイド'],
+				//['vocaloid', 'ボーカロイド'],
 			],
 		}
 	},

@@ -11,7 +11,7 @@ sidebarDepth: 2
 ## 大衆の反逆
 
 ::: tip 基本情報
-- 著者 : José Ortega y Gasset (ホセ・オルテガ・イ・ガセット)
+- 著者 &nbsp; &nbsp; &nbsp; &thinsp; : José Ortega y Gasset (ホセ・オルテガ・イ・ガセット)
 - 出版年月 : 1929
 :::
 
@@ -29,7 +29,7 @@ sidebarDepth: 2
 ## 職業としての学問
 
 ::: tip 基本情報
-- 著者 : Karl Emil Maximilian "Max" Weber (マックス・ヴェーバー)
+- 著者 &nbsp; &nbsp; &nbsp; &thinsp; : Karl Emil Maximilian "Max" Weber (マックス・ヴェーバー)
 - 出版年月 : 1917
 :::
 
@@ -47,7 +47,7 @@ sidebarDepth: 2
 ## 職業としての政治
 
 ::: tip 基本情報
-- 著者 : Karl Emil Maximilian "Max" Weber (マックス・ヴェーバー)
+- 著者 &nbsp; &nbsp; &nbsp; &thinsp; : Karl Emil Maximilian "Max" Weber (マックス・ヴェーバー)
 - 出版年月 : 1919
 :::
 
@@ -57,4 +57,11 @@ sidebarDepth: 2
 :::
 
 詳細はこちらへ\[<a href="/my_page/book_review/liberal_arts/politik_als_eruf" target="_blank">職業としての政治</a>\]
+
+## システムの科学
+
+::: tip 基本情報
+- 著者 &nbsp; &nbsp; &nbsp; &thinsp; : 
+- 出版年月 : 
+:::
 

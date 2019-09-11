@@ -47,6 +47,7 @@ module.exports = {
 				['utokyo', '大学'],
 				['china', '中国'],
 				['vocaloid', 'ボーカロイド'],
+				['animes', 'アニメ'],
 			],
 		}
 	},

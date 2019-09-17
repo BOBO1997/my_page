@@ -21,7 +21,8 @@ module.exports = {
 		],
 		sidebar: {	
 			'/book_review/': [
-				['', '【読書録】'],
+				//['', '【読書録】'],
+				['', '>>>>>>   読書録   <<<<<<'],
 				'mathematics',
 				'physics',
 				'computer_science',
@@ -31,7 +32,8 @@ module.exports = {
 				'others'
 			],
 			'/lecture_review/': [
-				['', '【授業記録】'],
+				//['', '【授業記録】'],
+				['', '>>>>>>  授業日記  <<<<<<'],
 				['2A/', '2A'],
 				['3S/', '3S'],
 				['3A/', '3A'],
@@ -39,10 +41,15 @@ module.exports = {
 				['4A/', '4A']
 			],
 			'/articles/': [
-				['', '【記事・まとめ】'],
+				['', '>>>>>> 記事/まとめ <<<<<<'],
+				['mathematics', '数学'],
+				['physics', '物理'],
+				['computer_science', '計算機科学'],
+				['others', 'その他'],
 			],
 			'/chitchat/': [
-				['', '【雑談】'],
+				['', '>>>>>>    雑談    <<<<<<'],
+				//['', '【雑談】'],
 				['diary', '日記'],
 				['utokyo', '大学'],
 				['china', '中国'],

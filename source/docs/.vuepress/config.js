@@ -62,5 +62,17 @@ module.exports = {
 	dest: '../docs/',
 	markdown: {
 		lineNumbers: true
-	}
+	},
+	plugins: [
+		//'vuepress-plugin-latex',
+		[
+			'vuepress-plugin-mathjax',
+			{
+				target: 'svg',
+				macros: {
+					//'*': '\\times',
+				},
+			},
+		]
+	]
 }

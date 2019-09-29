@@ -1,12 +1,16 @@
 {
   "devDependencies": {
-    "vuepress": "^1.0.3",
-    "name": "source",
+    "license": "MIT",
     "main": "index.js",
-    "license": "MIT"
+    "name": "source",
+    "vuepress": "^1.0.3"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress-plugin-latex": "^0.1.3",
+    "vuepress-plugin-mathjax": "^1.2.8"
   }
 }

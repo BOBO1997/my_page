@@ -34,8 +34,8 @@ sidebarDepth: 2
 :::
 
 ::: warning ステータス(読書中)
-- 開始 : 2019/09/08
-- 終了 : 
+- 開始 : 2019/10/05
+- 終了 : 2019/10/06
 :::
 
 詳細はこちらへ\[<a href="/my_page/book_review/liberal_arts/wissenschaft_als_eruf" target="_blank">職業としての学問</a>\]

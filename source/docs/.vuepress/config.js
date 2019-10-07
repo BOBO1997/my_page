@@ -23,13 +23,13 @@ module.exports = {
 			'/book_review/': [
 				//['', '【読書録】'],
 				['', '>>>>>>   読書録   <<<<<<'],
-				'mathematics',
-				'physics',
-				'computer_science',
-				'liberal_arts',
-				'novels',
-				'light_novels',
-				'others'
+				['mathematics','数学書'],
+				//['physics','物理書'],
+				//['computer_science','計算機科学'],
+				['liberal_arts','その他の学問書(?)'],
+				//['novels','小説'],
+				//['light_novels','ラノベ'],
+				['others', 'その他']
 			],
 			'/lecture_review/': [
 				//['', '【授業記録】'],
@@ -42,19 +42,19 @@ module.exports = {
 			],
 			'/articles/': [
 				['', '>>>>>> 記事/まとめ <<<<<<'],
-				['mathematics', '数学'],
-				['physics', '物理'],
-				['computer_science', '計算機科学'],
-				['others', 'その他'],
+				//['mathematics', '数学'],
+				//['physics', '物理'],
+				//['computer_science', '計算機科学'],
+				//['others', 'その他'],
 			],
 			'/chitchat/': [
 				['', '>>>>>>    雑談    <<<<<<'],
 				//['', '【雑談】'],
-				['diary', '日記'],
+				//['diary', '日記'],
 				['utokyo', '大学'],
-				['china', '中国'],
+				//['china', '中国'],
 				['vocaloid', 'ボーカロイド'],
-				['animes', 'アニメ'],
+				//['animes', 'アニメ'],
 			],
 		}
 	},

@@ -26,7 +26,7 @@
 
 赤が必修、緑が選択で履修した授業です.
 結局GCIは撤退、メディアコンテンツは履修見送りになりました.
-![2Aの時間割](/my_page/lecture_review/3S.png)
+![3Sの時間割](/my_page/lecture_review/3S.png)
 各科目のより詳細な感想は[3S](/lecture_review/3S/)をご参照ください.
 
 ## 3Aの時間割
@@ -37,7 +37,7 @@
 :::
 
 赤が必修、緑が選択で履修した授業です.
-![2Aの時間割](/my_page/lecture_review/3A.png)
+![3Aの時間割](/my_page/lecture_review/3A.png)
 各科目のより詳細な感想は[3A](/lecture_review/3A/)をご参照ください.
 
 
@@ -52,7 +52,7 @@
 :::
 
 濃い紫色が必修、少し濃い紫色が選択必修、薄い紫色が選択で履修した授業です.
-![2Aの時間割](/my_page/lecture_review/4S.png)
+![4Sの時間割](/my_page/lecture_review/4S.png)
 各科目のより詳細な感想は[4S](/lecture_review/4S/)をご参照ください.
 
 ## 4Aの時間割
@@ -61,4 +61,8 @@
 卒業に必要な単位は全て足りているので、必修の論文構成法以外は好きに取れるという状態です.
 :::
 
+
+濃い青色が必修、薄い青色が選択、色なしが選択(テストのみ参加)で履修した授業です.
+![4Aの時間割](/my_page/lecture_review/4A.png)
+各科目のより詳細な感想は[4A](/lecture_review/4A/)をご参照ください.
 

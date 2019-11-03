@@ -10,4 +10,4 @@ sidebarDepth: 2
 
 まだ記事が何もなくて寂しい...
 
-
+- [アーベル群上の隠れ部分群問題を量子フーリエ変換で解く話](https://github.com/BOBO1997/my_page/tree/master/docs/articles/pdfs/qft_hsp.pdf)

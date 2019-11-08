@@ -34,7 +34,7 @@
 
 ::: tip 基本情報
 - 開講日時 : 火1火2
-- 先生 &thinsp; &nbsp; &nbsp; &nbsp; : 宮尾 祐介 先生
+- 先生 &thinsp; &nbsp; &nbsp; &nbsp; : 今井 直毅 先生
 - 評価方法 : 中間試験 + 期末試験
 - 備考 &thinsp; &nbsp; &nbsp; &nbsp; :
 :::
@@ -64,7 +64,7 @@
 
 ::: tip 基本情報
 - 開講日時 : 火4
-- 先生 &thinsp; &nbsp; &nbsp; &nbsp; : 先生
+- 先生 &thinsp; &nbsp; &nbsp; &nbsp; : マイケル マクドナルド 先生
 - 評価方法 : 出席 + 期末試験
 - 備考 &thinsp; &nbsp; &nbsp; &nbsp; :
 :::
@@ -119,4 +119,13 @@
 
 ### 課題
 
+## 情報科学特別演習
 
+::: tip 基本情報
+- 開講日時 : 不定
+- 先生 &thinsp; &nbsp; &nbsp; &nbsp; : 今井 浩 先生
+- 評価方法 : ?
+- 備考 &thinsp; &nbsp; &nbsp; &nbsp; : 卒論のことです
+:::
+
+卒論については[こちら](/my_page/chitchat/utokyo)をどうぞ.

@@ -40,12 +40,18 @@ module.exports = {
 				['4S/', '4S'],
 				['4A/', '4A']
 			],
+			/*
 			'/articles/': [
 				['', '>>>>>> 記事/まとめ <<<<<<'],
 				//['mathematics', '数学'],
 				//['physics', '物理'],
 				//['computer_science', '計算機科学'],
 				//['others', 'その他'],
+			],
+			*/
+			'/articles/computer_science/': [
+				['', '計算機科学関連:目録'],
+				['tsp_by_grover','[量子計算]TSPを解く動的計画法をGrover探索で加速する方法'],
 			],
 			'/chitchat/': [
 				['', '>>>>>>    雑談    <<<<<<'],

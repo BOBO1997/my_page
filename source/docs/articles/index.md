@@ -12,11 +12,21 @@ sidebarDepth: 2
 
 ::: tip 計算機科学
 
-主に[量子計算]、[アルゴリズム]、[グラフ理論]
+主に数学の話題で自分がまとめた内容や役に立った内容を記事としておいておきます.
 
-計算機科学関連の記事と目録は[こちら](/my_page/articles/computer_science/index)
+内容は[量子計算]、[アルゴリズム]、[グラフ理論]
+
+記事と目録は[こちら](/my_page/articles/computer_science/index)
+
 :::
 
 
+::: tip 数学
+
+主に数学の話題で自分がまとめた内容や役に立った内容を記事としておいておきます.
+
+記事と目録は[こちら](/my_page/articles/mathematics/index)
+
+:::
 
 

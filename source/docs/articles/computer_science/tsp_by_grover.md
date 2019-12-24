@@ -42,12 +42,12 @@ Bellman–Held–Karpのアルゴリズム(1962)
 以下は擬似コードです.
 ```python
 for i in (1 , ... , n) :
-	OPT[v_i, {v_i}] = d(s, v_i)
+	OPT[v_i, {v_i}] = d(v_1, v_i)
 for j in (1 , ... , n-1) :
-	forall subset S of {v_1, v_2, ..., v_n, t} satisfying |S| = j :
+	forall subset S of {v_2, ..., v_n} satisfying |S| = j :
 		for i in (2 , ... , n) : 
 			OPT[v_i, S] = min( OPT[v_i, S\{v_k}] + d(v_i, v_k); for v_k in S\{v_i} )
-return min(OPT[v_i, V\{v_1}] + d(v_i); for v_i in V\{v_1})
+return min(OPT[v_i, V\{v_1}] + d(v_1, v_i); for v_i in V\{v_1})
 ```
 
 このアルゴリズムの計算量は$j$のループに$n$、その中で部分集合$S$を全て探索しているので$2^n$、さらにそれぞれの部分集合について全要素を調べるのに$i$でループを回しているので$n$、よって、全体では$O(n^22^n)$時間になります.
@@ -61,15 +61,16 @@ return min(OPT[v_i, V\{v_1}] + d(v_i); for v_i in V\{v_1})
 $OPT[s,t,S] = min(OPT[s, u, S-\{t\}] + d(u, t)),\ for\ u\in N(t)\cap S$
 
 となります. 
+この更新式を「古典の部分問題の計算方法」と呼ぶことにします.
 ここで、部分集合$S$について、$k\in{2,\cdots,|S|-1}$を定数(例えば操作としては半分に問題を分けるなど)として、上の計算方法は次のようにも書くことができます.
-これを「部分問題の計算方法」と呼ぶことにします.
+これ(以下の更新式)を「部分問題の計算方法」と呼ぶことにします.
 
 $OPT[s,t,S] = \underset{s\in X, t\notin X, |X| = k}{min}\ \underset{u\in X-\{s\}}{min}(OPT[s, u, X] + OPT[u, t, (S-X)\cup\{u\}])$
 
 これは、集合$S$を大きさが$k$の部分集合$X\subset S$と$S-X$に分け、$s\in X$から出発して$u\in X$に終わるコスト最小のハミルトン路と、$u\in (S-X)\cup\{u\}$から出発して$t\in S-X$に終わるコスト最小のハミルトン路をつなげたものの中でコスト最小のものを選べ良いという発想です. 
 
 この発想に基づくと、上で与えたTSPの解を求める動的計画法は見方を少し変えれば以下の解き方と同じです.
-これを「全体の計算方法」と呼ぶことにします.
+これ(以下の更新式)を「全体の計算方法」と呼ぶことにします.
 
 $OPT = \underset{S\subset V, |S| = \frac n 2}{min}\ \underset{s,t\in S, s\neq t}{min}(OPT[s, t, S] + OPT[s, t, (V-S)\cup\{s,t\}])$
 
@@ -84,10 +85,13 @@ $OPT = \underset{S\subset V, |S| = \frac n 2}{min}\ \underset{s,t\in S, s\neq t}
 ここで、上の$k$を$\frac {|S|} 2$として、問題を次々2分割するのも良いのですが、分割の段階が多くなる分、小さくわけられた問題の数も指数的に増えます. 原論文ではこの段階を3段階でとどめ、3段階目は正確に二等分するのではなく、パラメタ$\alpha$を用いて分割の調整を行なっています.(テイラー展開の打ち切った部分の処理とお気持ちが似てる...?)
 
 ::: tip 分割の段階(深さ)
-1. $V$を$S$と$V-S$に二等分する. つまり、サイズ$\frac n 2$の部分問題に分ける.
-2. 1.で2等分したサイズ$\frac n 2$の部分問題の最適解を求めるにあたって、これをさらに2等分する. つまり、サイズ$\frac n 4$の部分問題にする.
-3. 2.で2等分したサイズ$\frac n 4$の部分問題の最適解を求めるにあたって、これをパラメタ$0<\alpha<\frac 1 2$を使って、サイズ$\frac {\alpha n} 4$とサイズ$\frac {(1-\alpha)n} 4$の部分問題に分割する.
+1. 全体の問題の最適解を「全体の計算方法」を使って求めるにあたって、$V$を$S$と$V-S$に二等分する. つまり、サイズ$\frac n 2$の部分問題に分ける.
+2. 1.で2等分したサイズ$\frac n 2$の部分問題の最適解を「部分問題の計算方法」を使って求めるにあたって、これをさらに2等分する. つまり、サイズ$\frac n 4$の部分問題にする.
+3. 2.で2等分したサイズ$\frac n 4$の部分問題の最適解を「部分問題の計算方法」を使って求めるにあたって、これをパラメタ$0<\alpha<\frac 1 2$を使って、サイズ$\frac {\alpha n} 4$とサイズ$\frac {(1-\alpha)n} 4$の部分問題に分割する.
+4. (ここが古典で準備する部分) 「古典の部分問題の計算方法」の計算方法を使って、動的計画法の表を大きさ$\frac {(1-\alpha)n} 4$のものまで計算する.
 :::
+
+実行する順序は4, 3, 2, 1の順に計算していけば良い.
 
 それぞれの段階を計算する方法
 - 段階3では最大でサイズ$\frac {(1-\alpha)n} 4$の部分問題を計算することになるから、ここを古典アルゴリズムで動的計画法を回し、サイズ$\frac {(1-\alpha)n} 4$の部分集合までの解を全て保持しておく.
@@ -126,4 +130,5 @@ $\displaystyle O\left(\sum_{i=0}^{\frac {(1-\alpha)n} 4}\left(\begin{array}{cc}n
 ## 参考文献
 
 - Ambainis, Andris, et al. "Quantum speedups for exponential-time dynamic programming algorithms." Proceedings of the Thirtieth Annual ACM-SIAM Symposium on Discrete Algorithms. Society for Industrial and Applied Mathematics, 2019.
+- [Exact Exponential Algorithms](https://www.springer.com/jp/book/9783642165320), 学内無料、なお、ネットに[pdf](http://www.ii.uib.no/~fomin/BookEA/BookEA.pdf)が落ちてる
 
